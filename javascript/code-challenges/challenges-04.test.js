@@ -114,7 +114,7 @@ For example, ['Alphabet', 'alphabet', 'carrot', 'Zebra'] is correctly sorted, an
 
 const alphabetizeBetter = (arr) => {
   // Solution code here...
-  arr.sort((a, b) => a.localeCompare(b));
+  arr.sort((a, b) => a[property] > b[property] ? 1 : -1);
   return arr;
 };
 
